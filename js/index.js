@@ -3,7 +3,7 @@ const form = document.querySelector("#form");
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
-    const inputPeso = e.target.querySelector('#peso');
+    const inputPeso = e.target.querySelector('#peso').replace(',', '.');
     const inputAltura = e.target.querySelector('#altura');
 
     const peso = Number(inputPeso.value);
