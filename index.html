@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Calcule seu IMC!</title>
+    <meta name="author" content="Estevan H. Ulian">
+    <meta name="description" content="Aplicação Javascript para cálculo de IMC">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/modelo/css/style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Tabela IMC</h1>
+        <table>
+            <tr>
+                <th>IMC</th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <td>Menos do que 18,5</td>
+                <td>Abaixo do Peso</td>
+            </tr>
+            <tr>
+                <td>Entre 18,5 e 24,9</td>
+                <td>Peso normal</td>
+            </tr>
+            <tr>
+                <td>Entre 25 e 29,9</td>
+                <td>Sobrepreso</td>
+            </tr>
+            <tr>
+                <td>Entre 30 e 34,9</td>
+                <td>Obesidade Grau I</td>
+            </tr>
+            <tr>
+                <td>Entre 35 e 39,9</td>
+                <td>Obesidade Grau II</td>
+            </tr>
+            <tr>
+                <td>Mais do que 40</td>
+                <td>Obesidade Grau III</td>
+            </tr>
+        </table>
+
+        <h2>Calcule seu IMC</h2>
+
+        <form action="/" id="form" method="POST">
+            <label for="peso">Peso:</label>
+            <input type="text" id="peso">
+            <label for="altura">Altura:</label>
+            <input type="text" id="altura">
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+    </section>
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
