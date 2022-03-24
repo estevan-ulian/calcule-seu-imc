@@ -19,6 +19,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    text-decoration: none;
 }
 
 body {
@@ -32,6 +33,7 @@ body {
     background-size: cover;
     display: flex;
     align-items: center;
+    flex-direction: column;
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
@@ -116,4 +118,18 @@ form button:hover {
 
 .bad {
     background-color: var(--bad);
+}
+
+footer {
+    color: var(--dark);
+    padding: 1rem 0;
+}
+
+footer a {
+    color: var(--dark);
+    transition: all .3s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--primary)
 }
