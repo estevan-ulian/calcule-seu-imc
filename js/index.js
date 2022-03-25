@@ -22,12 +22,12 @@ form.addEventListener('submit', function (e) {
     const imc = getImc(peso, altura);
     const nivelImc = getNivelImc(imc);
     
-    const msg = `Seu IMC é ${imc}. Seu estado atual: <span class="lowercase"><strong>${nivelImc}</strong></span>`;
+    const msg = `Seu IMC é <strong>${imc}</strong>.<br>Estado atual: <span class="lowercase"><strong>${nivelImc}</strong>.</span>`;
     setResult(msg, true);
 });
 
 function getNivelImc (imc) {
-    const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade I', 'Obesidade II', 'Obesidade III'];
+    const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade 1', 'Obesidade 2', 'Obesidade 3'];
 
     if (imc >= 39.9) return nivel[5];
     
