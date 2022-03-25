@@ -27,17 +27,23 @@ body {
     font-size: 1.6rem;
     font-family: 'Open-sans', sans-serif;
     line-height: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     min-height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 0 1rem;
     background-image: var(--bgbody);
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
     position: relative;
+}
+
+@media (max-width: 768px){
+    body {
+        justify-content: flex-start;
+    }
 }
 
 body::after {
@@ -110,6 +116,7 @@ form button:hover {
 }
 
 .container {
+    min-width: 40%;
     max-width: 60rem;
     margin: 1rem auto;
     padding: 2rem 1rem;
@@ -120,8 +127,10 @@ form button:hover {
 
 @media screen and (max-width: 76.8rem) {
     body {
-        padding: 0;
+        margin: 0;
+        /* padding: 0 1rem; */
     }
+
     .container {
         width: 100%;
     }
@@ -139,7 +148,9 @@ form button:hover {
 .footer {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 0;    
+    left: 0;
+    right: 0;
     color: var(--white);
     text-align: center;
     height: 3rem;
@@ -160,15 +171,11 @@ footer a:hover {
     text-transform: lowercase;
 }
 
-@media screen and (max-width: 76.8rem) {
-    body {
-        justify-content: flex-start;
-    }
-}
-
 @media screen and (max-height: 768px) {
     footer {
         display: block;
         position: relative;
+        left: 0;
+        right: 0;
     }
 }
